@@ -1,0 +1,103 @@
+.create-store-container {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.create-store-container .loader,
+.create-store-container .error {
+  padding: 1rem;
+  color: white;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+.create-store-container .loader {
+  background-color: orange;
+}
+
+.create-store-container .error {
+  background-color: rgb(236, 10, 10);
+}
+
+.create-store-container form {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.create-store-container form img {
+  width: 200px;
+  height: 150px;
+  /* margin: 0 auto; */
+  object-fit: cover;
+}
+
+.create-store-container form .preview-image-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.create-store-container form .preview-image-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 2rem 0; */
+}
+
+.create-store-container form .preview-image-container div button {
+  padding: 5px 1rem;
+  font-weight: bold;
+  font-size: small;
+  color: white;
+  /* border-radius: 3px; */
+}
+
+.create-store-container form .preview-image-container div button:first-child {
+  background-color: rgb(241, 162, 14);
+}
+
+.create-store-container form .preview-image-container div button:last-child {
+  background-color: rgb(238, 19, 19);
+}
+
+.create-store-container form .image-input {
+  position: absolute;
+  left: -10000px;
+}
+
+.create-store-container form input,
+.create-store-container form select {
+  padding: 1.5rem 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 2px lightgray;
+  outline: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.create-store-container form label {
+  text-align: left;
+}
+
+.create-store-container .hours-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.create-store-container form > button {
+  padding: 1.5rem 4rem;
+  width: max-content;
+  background-color: rgb(20, 151, 20);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+}

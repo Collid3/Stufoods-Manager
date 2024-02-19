@@ -1,0 +1,88 @@
+.stores-container {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stores-container > section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.stores-container > section input {
+  flex-grow: 2;
+  border-radius: 3px;
+  padding: 1rem;
+  box-shadow: 0 0 1px lightgray;
+}
+
+.stores-container > section button {
+  padding: 5px 1rem;
+  width: max-content;
+  white-space: none;
+  background-color: rgb(0, 82, 150);
+  color: whitesmoke;
+  border-radius: 3px;
+}
+
+.stores-container > section button:hover {
+  background-color: transparent;
+  color: rgb(0, 82, 150);
+  outline: 1px solid rgb(0, 82, 150);
+  transition: all 0.1s ease-in-out;
+}
+
+.stores-container ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 225px);
+  gap: 2rem;
+}
+
+.stores-container ul li {
+  box-shadow: 0 0 3px lightgray;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.stores-container ul li img {
+  width: 98%;
+  height: 180px;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+.stores-container ul li .store-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.stores-container ul li .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stores-container ul li .buttons button {
+  padding: 5px 1rem;
+  width: 40%;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.stores-container ul li .buttons button:first-child {
+  background-color: rgb(235, 153, 1);
+}
+
+.stores-container ul li .buttons button:last-child {
+  background-color: rgb(238, 22, 22);
+}

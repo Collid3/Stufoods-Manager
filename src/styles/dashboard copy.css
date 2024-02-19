@@ -1,0 +1,117 @@
+.dashboard-container {
+  flex-grow: 2;
+  padding: 2rem;
+}
+
+.dashboard-container h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-container > section {
+  display: flex;
+  gap: 2rem;
+}
+
+.dashboard-container > section aside {
+  flex: 1.2;
+}
+
+.dashboard-container > section aside h3 {
+  padding: 1.75rem 0;
+}
+
+.dashboard-container > section table {
+  flex: 4.5;
+  text-align: left;
+  height: max-content;
+  border-collapse: collapse;
+}
+
+.dashboard-container > section table th {
+  padding: 1.95rem 0;
+  border-bottom: 1px solid black;
+}
+
+.dashboard-container > section table td {
+  padding: 1rem 0;
+}
+
+.dashboard-container > section aside li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dashboard-container > section aside li:hover {
+  text-decoration: underline;
+}
+
+.dashboard-container > section aside li.selected {
+  background-color: rgb(0, 101, 184);
+  color: white;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    padding: 2rem 1rem;
+  }
+
+  .dashboard-container > section aside h3 {
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .dashboard-container > section {
+    flex-direction: column;
+  }
+
+  .dashboard-container > section aside nav ul {
+    display: flex;
+  }
+
+  .dashboard-container > section aside nav ul li {
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+  }
+
+  .dashboard-container > section aside nav ul li:hover {
+    text-decoration: none;
+  }
+
+  .dashboard-container > section {
+    gap: 0;
+  }
+
+  /* .dashboard-container > section aside {
+    position: absolute;
+    left: -10000px;
+  } */
+
+  .dashboard-container > section table {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+  }
+
+  .dashboard-container > section table th {
+    padding: 6px 0;
+  }
+
+  .dashboard-container > section table tr th:nth-child(4),
+  .dashboard-container > section table tr td:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dashboard-container > section table {
+    font-size: 1.35rem;
+  }
+
+  .dashboard-container > section table tr th:nth-child(1),
+  .dashboard-container > section table tr td:nth-child(1) {
+    display: none;
+  }
+}

@@ -1,0 +1,67 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ececec;
+  padding: 2rem;
+  flex-grow: 2;
+}
+
+.auth-container h2 {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: min(600px, 100%);
+  margin: 0 auto;
+}
+
+.login-demo-guide {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.auth-form input:focus {
+  outline: 1px solid rgb(0, 82, 150);
+}
+
+.auth-form input,
+.auth-form button {
+  width: 100%;
+  padding: 1.5rem;
+  outline: 1px solid lightgray;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.auth-form section {
+  position: relative;
+}
+
+.auth-form section svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: 6;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.auth-form section svg:hover {
+  color: orange;
+}
+
+.auth-form p {
+  text-align: center;
+}
+
+.auth-form p span a {
+  color: rgb(0, 82, 150);
+}

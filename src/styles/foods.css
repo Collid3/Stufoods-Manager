@@ -1,0 +1,84 @@
+.foods-container {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.foods-container > section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.foods-container > section button {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: rgb(0, 82, 150);
+  color: whitesmoke;
+  padding: 5px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.foods-container .search-container {
+  padding: 1.5rem 2rem;
+  background-color: white;
+}
+
+.foods-container input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 2px gray;
+}
+
+.foods-container ul {
+  background-color: white;
+  flex-grow: 2;
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 1.5rem;
+}
+
+.foods-container .product {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 0 2px gray;
+  border-radius: 3px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.foods-container img {
+  border-radius: 3px;
+  height: 155px;
+  object-fit: cover;
+}
+
+.foods-container .buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.foods-container .buttons button {
+  padding: 4px 10px;
+  background-color: rgb(216, 216, 216);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  width: 50%;
+  color: rgb(0, 82, 150);
+}
+
+.foods-container .buttons button:last-child {
+  color: rgb(240, 17, 17);
+}
